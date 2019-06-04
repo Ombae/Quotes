@@ -8,16 +8,16 @@ import {Quote} from '../quote'
 })
 export class QuotesComponent implements OnInit {
     quotes = [
-      new Quote("Don't cry because it's over, smile because it happened","Dr. Seuss","John Muasa",new Date(2019,2,20),0,0),
-      new Quote("Be yourself; everyone else is already taken.","Oscar Wilde","John Muasa",new Date(2019,2,16),0,0),
-      new  Quote("So many books, so little time","Frank Zappa","John Muasa",new Date(2019,2,21),0,0),
+      new Quote("As you grow older more people you know start to die.","Biko Zulu","Seth Ombae",new Date(2019,6,4),0,0),
+      new Quote("Your kids do not have to like your pants","Calvince Omonge","Seth Ombae",new Date(2019,6,4),0,0),
+      new  Quote("God is great, whisky is good and people arecrazy!","Hamida Mustafa","Seth Ombae",new Date(2019,6,3),0,0),
       ]
 
     showDetails(index){
       this.quotes[index].showPublisher = !this.quotes[index].showPublisher;
     }
 
-  
+
 
     addNewQuote(quote){
       let quotelength = this.quotes.length;
