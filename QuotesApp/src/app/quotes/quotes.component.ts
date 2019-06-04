@@ -1,5 +1,5 @@
 import { Component, OnInit,EventEmitter } from '@angular/core';
-import {Quote} from './quote'
+import {Quote} from '../quote'
 
 @Component({
   selector: 'app-quotes',
@@ -17,7 +17,7 @@ export class QuotesComponent implements OnInit {
       this.quotes[index].showPublisher = !this.quotes[index].showPublisher;
     }
 
-
+  
 
     addNewQuote(quote){
       let quotelength = this.quotes.length;

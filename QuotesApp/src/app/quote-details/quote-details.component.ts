@@ -16,7 +16,7 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
-
+ 
   quotePlus(plus:boolean){
     this.isPlus.emit(plus);
   }
@@ -24,7 +24,7 @@ export class QuoteDetailsComponent implements OnInit {
   quoteMinus(minus:boolean){
     this.isMinus.emit(minus);
   }
-
+  
   constructor() { }
 
   ngOnInit() {

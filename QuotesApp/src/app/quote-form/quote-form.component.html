@@ -9,7 +9,8 @@
       </div>
       <div class="form-group">
         <label for="quote">Enter Quote</label>
-        <textarea type="text" class="form-control" id="quote" rows="4" [(ngModel)]="newQuote.quote" name="quote"
+        <textarea type="text" class="form-control" id="quote" rows="4" [(ngModel)]=
+        "newQuote.quote" name="quote"
           #quote="ngModel" required></textarea>
 
         <div [hidden]="quote.valid || quote.pristine" class="alert alert-warning">
@@ -20,7 +21,8 @@
       <!-- Author Input -->
       <div class="form-group">
         <label for="author">Author's Name</label>
-        <input class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+        <input class="form-control" id="author" [(ngModel)]="newQuote.author" name=
+        "author" #author="ngModel" required>
         <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
           <p> Author is Required</p>
 
@@ -31,8 +33,8 @@
       <!-- Publisher Input -->
       <div class="form-group">
         <label for="publisher">Publisher</label> <br>
-        <input type='text' id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher="ngModel"
-          required>
+        <input type='text' id="publisher" [(ngModel)]="newQuote.publisher"
+         name="publisher" #publisher="ngModel"  required>
         <div [hidden]="publisher.valid || publisher.pristine" class="alert alert-danger">
           <p>Publisher is Required</p>
 
@@ -42,8 +44,8 @@
       <!-- Date Input -->
       <div class="form-group">
         <label for="publishDate">Date Published</label> <br>
-        <input type='date' id="publishDate" [(ngModel)]="newQuote.publishDate" name="publishDate" #publishDate="ngModel"
-          required>
+        <input type='date' id="publishDate" [(ngModel)]="newQuote.publishDate" name=
+        "publishDate" #publishDate="ngModel"  required>
         <div [hidden]="publishDate.valid || publishDate.pristine" class="alert alert-danger">
           <p> Complete Date is Required</p>
 

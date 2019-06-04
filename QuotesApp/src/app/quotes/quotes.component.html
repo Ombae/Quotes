@@ -10,13 +10,18 @@
 
            <div class="list">
               <ul>
-                  <li>{{quote.quote}} <br> - <span id="write">{{quote.author}}</span>  <br></li>
+                  <li>{{quote.quote}} <br> - <span id="write">{{quote.author}}
+                  </span>  <br></li>
                 </ul>
 
-                    <p  id="correct">This quote was published on {{quote.publishDate|date}}   </p><br>
-                    <button  (click)='showDetails(i)' type="button" class="btn btn-info">Show Details</button>
-                    <app-quote-details   *ngIf="quote.showPublisher" [quote]='quote' (isComplete)='deleteQuote
-                    ($event,i)' (isPlus)='quotePlus($event,i)' (isMinus)='quoteMinus($event,i)'></app-quote-details>
+                    <p  id="correct">This quote was published on {{quote.publishDate|date}}
+                       </p><br>
+                    <button  (click)='showDetails(i)' type="button" class="btn btn-info">
+                      Show Details</button>
+                    <app-quote-details   *ngIf="quote.showPublisher" [quote]='quote'
+                     (isComplete)='deleteQuote
+                    ($event,i)' (isPlus)='quotePlus($event,i)' (isMinus)='quoteMinus($event,i)'>
+                  </app-quote-details>
            </div>
 
             </div>

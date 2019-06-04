@@ -1,7 +1,8 @@
 <div class="describe">
         <p id="details"> This quote was published by {{quote.publisher}}</p> <br>
         <i class="fas fa-heart" (click)='quotePlus(true)' id="up">{{quote.upVote}}</i>
-        <i class="fas fa-thumbs-down" (click)='quoteMinus(true)' id="down">{{quote.downVote}}</i>
+        <i class="fas fa-thumbs-down" (click)='quoteMinus(true)'
+        id="down">{{quote.downVote}}</i> 
         <br>
         <p>
             This quote was posted {{quote.publishDate|dateCount}} days ago.
